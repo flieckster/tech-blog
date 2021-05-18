@@ -14,9 +14,11 @@
 </head>
 
 <body>
+
   <div class="wrapper">
     <header class="hero">
       <div class="row">
+        <h1 class="blog-title">Tech Blog</h1>
         <nav class="nav">
           <a class="link col" href="/">Home</a>
           <br>
@@ -28,15 +30,12 @@
           {{/if}}
         </nav>
       </div>
-
-      <h1 class="blog-title">Tech Blog</h1>
     </header>
 
     <main>
       {{{ body }}}
     </main>
   </div>
-
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}

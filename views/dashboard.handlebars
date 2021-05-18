@@ -1,5 +1,5 @@
-<section class="card" style="width: 50rem;">
-  <h5 class="card-header">Create New Post</h5>
+<section class="card border-secondary" style="width: 50rem;">
+  <h5 class="card-header text-secondary ">Create New Post</h5>
   <form class="card-body new-post-form" id="new-post-form">
     <label for="post-title" class="form-label">Title</label>
     <input class="form-control" type="text" id="post-title" name="post-title" />
@@ -13,11 +13,11 @@
 
 {{#if posts.length}}
 <section>
-  <h5>Your Posts</h2>
+  <h5>your Posts</h2>
   {{#each posts as |post|}}
   {{> post-info post}}
-  <div class="card" style="width: 50rem;">
-    <div class="card-header" >
+  <div class="card border-secondary" style="width: 50rem;">
+    <div class="card-header text-secondary" >
       <a class="btn btn-primary" href="/dashboard/edit/{{post.id}}">Edit Post</a>
     </div>
   </div>
