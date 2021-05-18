@@ -2,19 +2,17 @@
 
 {{#if loggedIn}}
 <div class="card">
-  <h2 class="card-header">Comment</h2>
+  <h5 class="card-header">Comment</h5>
   <form class="card-body comment-form" id="comment-form">
     <div>
       <textarea id="comment" name="comment-body"></textarea>
     </div>
-
     <div>
-      <button type="submit" class="btn">Add A Comment</button>
+      <button type="submit" class="btn btn-primary">Add A Comment</button>
     </div>
   </form>
 </div>
 {{/if}}
-
 
 {{> comments post.comments}}
 

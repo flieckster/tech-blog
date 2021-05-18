@@ -2,10 +2,11 @@ const router = require('express').Router();
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
-
+// get all posts
 router.get('/', withAuth, (req, res) => {
   Post.findAll({
     where: {
+      // use the ID from the session
       user_id: req.session.user_id
     },
     attributes: ['id', 'title', 'content', 'created_at'],
@@ -24,6 +25,7 @@ router.get('/', withAuth, (req, res) => {
     ]
   })
     .then(dbPostData => {
+      // serialize data before passing to template
       const posts = dbPostData.map(post => post.get({ plain: true }));
       res.render('dashboard', { posts, loggedIn: true });
     })
@@ -33,6 +35,7 @@ router.get('/', withAuth, (req, res) => {
     });
 });
 
+// edit post code her
 router.get('/edit/:id', withAuth, (req, res) => {
   Post.findOne({
     where: {
@@ -67,8 +70,13 @@ router.get('/edit/:id', withAuth, (req, res) => {
       res.status(500).json(err);
     });
 })
+
+// get new post
 router.get('/new', (req, res) => {
   res.render('new-post');
 });
 
+
 module.exports = router;
+
+//

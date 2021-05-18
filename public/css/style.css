@@ -1,11 +1,3 @@
-:root {
-  --primary: #9faca3;
-  --secondary: #beccb7;
-  --tertiary: #606e6e;
-  --light-dark: #968f96;
-  --dark: #361412;
-  --border-radius: 0.3rem;
-}
 
 * {
   box-sizing: border-box;
@@ -13,8 +5,8 @@
 
 body {
   background-color: var(--primary);
-  margin: 0;
-  padding: 0;
+  margin: 5;
+  padding: 5;
   font-family: sans-serif;
   color: var(--dark);
   line-height: 1.5;
