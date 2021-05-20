@@ -1,7 +1,7 @@
 
 const Post = require('./Post');
 const User = require('./User');
-const Comment = require('./Comment1');
+const Comment = require('./Comment');
 
 
 
