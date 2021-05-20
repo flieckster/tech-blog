@@ -11,14 +11,14 @@ Comment.init(
       type: DataTypes.INTEGER,
       primaryKey: true,
       allowNull: false,
-      autoIncrement: true,
+      autoIncrement: true
     },
     user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: 'user',
-        key: 'id',
+        key: 'id'
       }
     },
     post_id: {
@@ -26,16 +26,14 @@ Comment.init(
       allowNull: false,
       references: {
         model: 'post',
-        key: 'id',
+        key: 'id'
       }
     },
     comment_text: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [5],
-
-
+        len: [5]
       }
     }
   },
@@ -48,8 +46,6 @@ Comment.init(
   }
 );
 
-
-
-module.exports = Comment;
+module.exports = Comment
 
 //// comment model
