@@ -1,5 +1,5 @@
 {
-  "name": "techblog2",
+  "name": "tech-blog",
   "version": "1.0.0",
   "engines": {
     "node": "14.x"
@@ -23,14 +23,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chorvick/techblog2.git"
+    "url": "git+https://github.com/flieckster/tech-blog.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chorvick/techblog2/issues"
+    "url": "https://github.com/flieckster/tech-blog/issues"
   },
-  "homepage": "https://github.com/chorvick/techblog2#readme",
+  "homepage": "",
   "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
 }
