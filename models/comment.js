@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-//I am a comment addex for a testing purpose
+
 
 class Comment extends Model { }
 
